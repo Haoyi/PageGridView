@@ -2,15 +2,16 @@ package com.tabviewlyaout;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * 作者:林国定 邮件:lingguodingg@gmail.com
@@ -58,10 +59,10 @@ public class TabViewLayout extends FrameLayout implements RadioGroup.OnCheckedCh
     /**
      * 设置Tab变化监听
      *
-     * @param onTabChangedListener
+     * @param listener
      */
-    public void setOnTabChangedListener(OnTabChangedListener onTabChangedListener) {
-        this.onTabChangedListener = onTabChangedListener;
+    public void setOnTabChangedListener(OnTabChangedListener listener) {
+        this.onTabChangedListener = listener;
     }
 
     /**
